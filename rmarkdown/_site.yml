@@ -1,0 +1,21 @@
+name: "My R Markdown Site"
+output_dir: "../docs"
+site: rmarkdown::default_site
+
+navbar:
+  title: "marine-ecologist - George Roff"
+  left:
+    - text: "Home"
+      href: index.html
+  right:
+    - text: "About"
+      href: about.html
+    - text: "Publications"
+      href: publications.html
+
+output:
+  html_document:
+    toc: false
+    code_folding: "hide"
+    css: "github-io.css"
+    fig_caption: true

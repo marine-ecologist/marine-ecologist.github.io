@@ -1,0 +1,25 @@
+---
+title: "Index"
+date: "2024-01-15"
+output: html_document
+---
+
+# About:
+
+# R packages:
+
+[dhw](https://marine-ecologist.github.io/dhw/): an R package for calculating SST metrics (Maximum Monthly Mean Climatology, SST Anomalies, Coral Bleaching HotSpots, Degree Heating Weeks)
+
+[coralseed](https://marine-ecologist.github.io/coralseed/): a spatially explicit reef-scale model of coral settlement following larval reseeding
+
+[DCIEM](https://marine-ecologist.github.io/DCIEM/): an `R` package and `shiny` app to calculate dive profiles using the [DCIEM diving algorithm](https://www.divegearexpress.com/amfile/file/download/file/143/product/8927/)
+
+# Spatial analytics
+
+[oceans](https://marine-ecologist.github.io/oceans/index.html): a platform for viewing ocean data and coral bleaching events in realtime, written in Cesium `javascript`
+
+[spatialtools](https://marine-ecologist.github.io/spatialtools/): a collection of tools developed in `r` and `shiny` to facilitate spatial conservation planning built upon `leaflet draw` functionality (`leafem` and `leaflet.extras`).
+
+# Sensor development:
+
+[sensorflow](https://github.com/marine-ecologist/sensorflow): development of low-cost open source drag-tilt flow meters using the `arduino` platform
