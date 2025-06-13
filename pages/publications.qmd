@@ -1,0 +1,256 @@
+---
+title: "Publications"
+author: "George Roff"
+date: "2025-03-18"
+format:
+  html:
+    toc: true
+    math: mathjax
+    code-fold: true
+    code-tools: true
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+Publication list dynamically generated via `scholar`, `bibtex`, `kbl`)
+
+::: {style="text-align: center;"}
+<img src="images/journals.jpg" style="width:750px;"/>
+:::
+
+```{r}
+#| message: false
+#| warning: false
+#| cache: false
+#| fig-height: 8
+#| fig-width: 12
+
+
+library(tidyverse)
+library(scholar)
+library(DT)
+library(magrittr)
+library(RColorBrewer)
+
+scholar_id <- "g_m1R7IAAAAJ"
+
+scholar_output <- scholar::get_publications(id = scholar_id) %>%
+  rowwise() %>%
+  mutate(
+    author = case_when(
+    str_ends(author, "\\.\\.\\.") ~ get_complete_authors(id = scholar_id, pubid = pubid),
+    TRUE ~ author
+    )
+  ) %>%
+ungroup()
+
+scholar_output_prepped <- scholar_output %>%
+  ungroup() %>%
+  arrange(desc(year), cites) %>%
+  mutate(
+    n = seq(1:nrow(.)),
+    author = gsub("(G Roff)", "<b>\\1</b>", author, ignore.case = TRUE),  # Use HTML for bold formatting
+    cites = as.numeric(cites)  # Ensure cites is numeric
+  ) %>%
+  select(n, author, year, title, journal, number, cites) %>%
+  rename(
+    "Year" = "year",
+    "Authors" = "author",
+    "Journal" = "journal",
+    "Issue/Number" = "number",
+    "Citations" = "cites"
+  )
+
+profile <- scholar::get_profile(scholar_id)
+                                
+citation_history <- scholar::get_citation_history(id = scholar_id)
+
+
+npapers <- scholar_output$title |> unique() |> length()
+ncites <- scholar_output$cites |> sum()
+hindex <- profile$h_index
+i10 <- profile$i10_index
+affiliation <- profile$affiliation
+
+datatable(
+  data.frame(
+    a = c("Author", "Affiliation", "Total Citations", "i-10 index", "h-index", paste0("Publications (", min(scholar_output_prepped$Year, na.rm=T), "-present)")),
+    b = c("George Roff", affiliation, ncites, hindex, i10, npapers)
+  ) |> t(),
+  colnames = NULL,
+  options = list(
+    dom = 't',  # show only the table body
+    paging = FALSE,
+    ordering = FALSE
+  ),
+  rownames = FALSE
+) %>%
+  formatStyle(columns = c(1, 2, 3, 4, 5, 6, 7), fontSize = '80%') 
+
+
+```
+
+```{r}
+#| message: false
+#| warning: false
+
+## All publications to bib
+# Convert to BibTeX format
+scholar_bib <- scholar_output %>%
+  mutate(
+    bibtex_entry = paste0(
+      "@article{", pubid, ",\n",
+      "  title = {", title, "},\n",
+      "  author = {", author, "},\n",
+      "  journal = {", journal, "},\n",
+      "  year = {", year, "},\n",
+      "  volume = {", sub(" \\(.*", "", number), "},\n", # Extract volume before '('
+      "  number = {", sub(".*\\((.*)\\).*", "\\1", number), "},\n", # Extract issue inside '()'
+      "  pages = {", cites, "},\n",
+      "  cid = {", cid, "},\n",
+      "  pubid = {", pubid, "}\n",
+      "}"
+    )
+  ) %>%
+  pull(bibtex_entry)
+
+#writeLines(scholar_bib, "scholar_output.bib")
+
+## select publications to bib
+search_terms <- c("Global disparity", "sharks on coral reefs", "evolutionary history", "seascapes", "decline of branching", "decoupled in Holocene")
+
+scholar_bib <- scholar_output %>%
+  filter(sapply(title, function(x) any(grepl(paste(search_terms, collapse = "|"), x, ignore.case = TRUE)))) |> 
+  mutate(
+    bibtex_entry = paste0(
+      "@article{", pubid, ",\n",
+      "  title = {", title, "},\n",
+      "  author = {", author, "},\n",
+      "  journal = {", journal, "},\n",
+      "  year = {", year, "},\n",
+      "  volume = {", sub(" \\(.*", "", number), "},\n", # Extract volume before '('
+      "  number = {", sub(".*\\((.*)\\).*", "\\1", number), "},\n", # Extract issue inside '()'
+      "  pages = {", cites, "},\n",
+      "  cid = {", cid, "},\n",
+      "  pubid = {", pubid, "}\n",
+      "}"
+    )
+  ) %>%
+  pull(bibtex_entry)
+
+writeLines(scholar_bib, "select_scholar_output.bib")
+
+# Function to lighten a vector of colors
+lighten_colors <- function(colors, factor = 0.5) {
+  if (factor < 0 || factor > 1) stop("Factor must be between 0 and 1")
+  col2rgb(colors) %>%
+    t() %>%
+    apply(1, function(col) {
+      rgb(
+        red = col[1] + (255 - col[1]) * factor,
+        green = col[2] + (255 - col[2]) * factor,
+        blue = col[3] + (255 - col[3]) * factor,
+        maxColorValue = 255
+      )
+    })
+}
+
+
+# Generate colors using RColorBrewer with adjusted alpha
+num_colors <- nrow(scholar_output_prepped)
+color_palette <- colorRampPalette(rev(brewer.pal(9, "RdYlBu")))(num_colors)
+color_palette <- lighten_colors(color_palette, factor = 0.4)  # Set alpha to 0.7
+
+# Map colors to the Citations column
+scholar_output_prepped <- scholar_output_prepped %>%
+  mutate(
+    cite_color = color_palette[rank(Citations, ties.method = "first")]
+  )
+
+## kbl format
+# scholar_output_prepped %>%
+#   select(-cite_color) %>%
+#   kbl(escape = FALSE) %>%  # Enable rendering of HTML
+#   kable_styling(bootstrap_options = "striped", 
+#                 font_size = 12, 
+#                 fixed_thead = TRUE,
+#                 position = "left") %>%
+#   column_spec(7, color = "black", 
+#               background = scholar_output_prepped$cite_color) %>%  # Use mapped colors
+#   column_spec(2, width_max = "30em") %>%
+#   column_spec(4, width_max = "60em") %>%
+#   column_spec(5, width_max = "40em") 
+
+# scholar_output |> 
+#   group_by(year) |> 
+#   summarise(TotalCitations = sum(cites)) |> 
+#   mutate(TotalCitations = cumsum(TotalCitations)) |> 
+# ggplot() + theme_bw() +
+#   geom_point(aes(year, TotalCitations, fill=year), shape=21, show.legend=FALSE) + 
+#   scale_fill_distiller(palette="Spectral") + ylab("Cumulative Citations")
+
+
+datatable(
+  scholar_output_prepped %>% select(-cite_color),
+  escape = FALSE,
+  options = list(
+    search = list(regex = TRUE, caseInsensitive = FALSE),
+    initComplete = JS(
+      "function(settings, json) {",
+      "$('body').css({'font-family': 'Arial', 'font-size': '60%'});",
+      "}"
+    ),
+    autoWidth = FALSE,
+    dom = 't<"bottom"ip>',
+    pageLength = 100,
+    columnDefs = list(
+      list(className = 'dt-center', targets = "_all"),
+      list(width = '10%', targets = 0),
+      list(width = '30%', targets = 1),
+      list(width = '10%', targets = 2),
+      list(width = '30%', targets = 3),
+      list(width = '10%', targets = 4),
+      list(width = '10%', targets = 5),
+      list(width = '10%', targets = 6)
+    )
+  ),
+  rownames = FALSE,
+  class = "cell-border stripe"
+) %>% formatStyle(
+  'Citations',
+  backgroundColor = styleEqual(scholar_output_prepped$Citations, scholar_output_prepped$cite_color),
+  color = "black"
+) %>%
+  formatStyle(columns = c(1, 2, 3, 4, 5, 6, 7), fontSize = '80%') 
+
+
+
+
+
+
+
+
+# JIF
+# via https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nie.re.kr/nie/cmmn/file/fileDown.do%3FatchFileId%3Deacd8968895c44c6a961680f3c0539d6%26fileSn%3D5&ved=2ahUKEwjK-uXPyYeLAxUVyDgGHVAsEeMQFnoECBYQAQ&usg=AOvVaw1_Y5_qHGFtehu4K4W6Uvas
+
+# jif <- read.csv("2024_jif.csv")
+# 
+# #find.IF.JCR("Ecology", 2024, exact.match = TRUE)
+# 
+# scholar_output_prepped <- scholar_output_prepped %>%
+#   mutate(
+#     matched_jif_name = sapply(Journal, function(journal) {
+#       # Perform partial matching with grep
+#       match_idx <- grep(journal, jif$Name, ignore.case = TRUE)
+#       if (length(match_idx) > 0) {
+#         jif$Name[match_idx[1]]  # Use the first match if multiple matches exist
+#       } else {
+#         NA  # No match found
+#       }
+#     })
+#   )
+
+```

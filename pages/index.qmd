@@ -1,0 +1,67 @@
+---
+title: ""
+author: "George Roff"
+date: "2025-03-18"
+format:
+  html:
+    toc: FALSE
+    code-fold: true
+    code-tools: false
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+![](images/clipboard-1631019035.jpeg){width="265"} ![](images/clipboard-615148530.jpeg){width="300"}
+
+#### Science
+
+```         
+•   marine ecology 
+•   spatial ecology, community ecology, population dynamics
+•   corals, fish, plants, fossils, microbes
+
+  - climate change impacts on marine systems
+  - larval dispersal and connectivity
+  - functional limits in scaling coral reef restoration
+  - reef accretion, Holocene reef dynamics, coral carbonate budgets
+  - conservation, science-policy integration
+```
+
+#### Statistics & Modelling:
+
+```         
+• spatial and statistical modelling (R, Python, Julia)
+• bayesian workflows (INLA, brms, STAN)
+• geospatial analysis (sf, stars, terra, CesiumJS, D3)
+• simulation and agent-based modelling
+• data visualization (R, Python, javascript)
+• data analytics, LLMs (Amazon EC2)
+• open science and reproducible workflows
+```
+
+#### Teaching
+
+```         
+• AI and large language models in teaching
+• adaptive learning platforms, enhanced learning tools
+• supervision and mentorship (Honours, Masters, PhD, ECR postdocs)
+```
+
+#### Marine Operations
+
+```         
+•  field research, survey/experimental design and implementation
+•  scientific diving (ADAS Level 1 commercial) and remote field logistics
+•  drone surveys and spatial mapping
+```
+
+#### Other:
+
+```         
+• media & communications 
+• scientific outreach & community engagement 
+• Science-policy integration
+```

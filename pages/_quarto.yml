@@ -1,0 +1,70 @@
+project:
+  type: website
+  output-dir: ../docs
+
+home:
+  title: "reefspawn"
+  strip_header: true
+
+website:
+  title: "marine-ecologist"
+  site-url: https://marine-ecologist.github.io/
+  navbar:
+    left:
+      - text: "Code"
+        icon: code
+        href: code.qmd
+      - text: "Projects"
+        icon: cube
+        menu:
+          - text: "---Ecological models---"
+            href: ""
+          - text: "coralseed - a realtime interactive visualisation of the worlds oceans"
+            icon: compass
+            href: https://marine-ecologist.github.io/coralseed/
+          - text: "reefspawn - an interactive visualisation of heatwaves on the Great Barrier Reef"
+            icon: moon
+            href: https://marine-ecologist.github.io/reefspawn/
+          - text: "DHW - "
+            icon: thermometer-half
+            href: https://marine-ecologist.github.io/reefspawn/
+          - text: "---data visualisation---"
+            href: ""
+          - text: "Oceans - a realtime interactive visualisation of the worlds oceans"
+            icon: circle
+            href: https://marine-ecologist.github.io/oceans/
+          - text: "dhw3 - an interactive visualisation of heatwaves on the Great Barrier Reef"
+            icon: fire
+            href: https://marine-ecologist.github.io/dhw3/
+          - text: "---Marine operations---"
+            href: ""
+          - text: "DCIEM - a dev app and package for calculating dive algorithms"
+            icon: calculator
+            href: https://marine-ecologist.github.io/dciem/
+          - text: "Sensorflow - development of low-cost tiltmeters"
+            icon: object-ungroup
+            href: https://github.com/marine-ecologist/sensorflow/
+      - text: "Publications"
+        menu:
+          - text: "Publication summary"
+            icon: bar-chart
+            href: publication_summary.qmd
+          - text: "Publication Record"
+            icon: stack-overflow
+            href: publications.qmd
+      - text: "Images"
+        icon: camera
+        menu:
+          - text: "2024/25 mass coral bleaching on the nGBR"
+            icon: fire
+            href: bleaching.qmd
+        href: publications.qmd
+      - text: "Github"
+        icon: github
+        href: https://github.com/marine-ecologist
+
+format:
+  html:
+    toc: false
+    code-fold: true
+    fig-cap-location: bottom
