@@ -80,7 +80,7 @@ All publication data generated dynamically `R` (`scholar`, `wordcloud`) and `Plo
 ```{r}
 #| message: false
 #| warning: false
-#| cache: true
+#| cache: false
 #| fig-height: 12
 #| fig-width: 6
 
@@ -339,7 +339,7 @@ set.seed(NULL)
 ```{r}
 #| message: false
 #| warning: false
-#| cache: true
+#| cache: false
 #| fig-height: 8
 #| fig-width: 12
 

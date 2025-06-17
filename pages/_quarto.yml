@@ -25,7 +25,7 @@ website:
           - text: "reefspawn - an interactive visualisation of heatwaves on the Great Barrier Reef"
             icon: moon
             href: https://marine-ecologist.github.io/reefspawn/
-          - text: "DHW - "
+          - text: "DHW - an R package for calculating sea surface temperature (SST) metrics"
             icon: thermometer-half
             href: https://marine-ecologist.github.io/reefspawn/
           - text: "---data visualisation---"
@@ -33,15 +33,15 @@ website:
           - text: "Oceans - a realtime interactive visualisation of the worlds oceans"
             icon: circle
             href: https://marine-ecologist.github.io/oceans/
-          - text: "dhw3 - an interactive visualisation of heatwaves on the Great Barrier Reef"
+          - text: "dhw3 - an interactive visualisation of heatwaves on the Great Barrier Reef "
             icon: fire
             href: https://marine-ecologist.github.io/dhw3/
           - text: "---Marine operations---"
             href: ""
-          - text: "DCIEM - a dev app and package for calculating dive algorithms"
+          - text: "DCIEM - a dev app and package for calculating dive algorithm s"
             icon: calculator
             href: https://marine-ecologist.github.io/dciem/
-          - text: "Sensorflow - development of low-cost tiltmeters"
+          - text: "Sensorflow - development of low-cost tiltmeters "
             icon: object-ungroup
             href: https://github.com/marine-ecologist/sensorflow/
       - text: "Publications"
@@ -53,12 +53,10 @@ website:
             icon: stack-overflow
             href: publications.qmd
       - text: "Images"
-        icon: camera
         menu:
-          - text: "2024/25 mass coral bleaching on the nGBR"
+          - text: "2024/2025 Great Barrier Reef bleaching events "
             icon: fire
-            href: bleaching.qmd
-        href: publications.qmd
+            href: images.qmd
       - text: "Github"
         icon: github
         href: https://github.com/marine-ecologist

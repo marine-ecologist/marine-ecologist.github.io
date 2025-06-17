@@ -14,9 +14,9 @@ execute:
 editor: visual
 ---
 
-![](images/clipboard-1631019035.jpeg){width="265"} ![](images/clipboard-615148530.jpeg){width="300"}
+![](images/clipboard-1631019035.jpeg){width="194"} ![](images/clipboard-615148530.jpeg){width="220"}![](images/clipboard-4173833884.jpeg){width="351"}
 
-#### Science
+### Science
 
 ```         
 •   marine ecology 
@@ -30,9 +30,10 @@ editor: visual
   - conservation, science-policy integration
 ```
 
-#### Statistics & Modelling:
+### Statistics & Modelling:
 
 ```         
+
 • spatial and statistical modelling (R, Python, Julia)
 • bayesian workflows (INLA, brms, STAN)
 • geospatial analysis (sf, stars, terra, CesiumJS, D3)
@@ -42,15 +43,20 @@ editor: visual
 • open science and reproducible workflows
 ```
 
-#### Teaching
+![](images/clipboard-3955410480.png){style="opacity: 0.75" width="650"}
+
+### Teaching
 
 ```         
+
 • AI and large language models in teaching
 • adaptive learning platforms, enhanced learning tools
 • supervision and mentorship (Honours, Masters, PhD, ECR postdocs)
 ```
 
-#### Marine Operations
+![](images/clipboard-1533648111.png){style="opacity: 0.75" width="650"}
+
+### Marine Operations
 
 ```         
 •  field research, survey/experimental design and implementation
@@ -58,10 +64,15 @@ editor: visual
 •  drone surveys and spatial mapping
 ```
 
-#### Other:
+![](images/clipboard-997343963.png){style="opacity: 0.75" width="650"}
+
+### Other:
 
 ```         
-• media & communications 
-• scientific outreach & community engagement 
-• Science-policy integration
+• media & communications
+• scientific outreach & community engagement
+• science-policy integration
 ```
+
+![](images/Screenshot%202025-06-13%20at%2015.31.30-01.png){style="opacity: 0.75" width="650"}
+
