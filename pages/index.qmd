@@ -75,4 +75,3 @@ editor: visual
 ```
 
 ![](images/Screenshot%202025-06-13%20at%2015.31.30-01.png){style="opacity: 0.75" width="650"}
-
