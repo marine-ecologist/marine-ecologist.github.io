@@ -16,15 +16,64 @@
   {
     "objectID": "code.html",
     "href": "code.html",
-    "title": "Code",
+    "title": "R packages:",
     "section": "",
-    "text": "R packages:\n\n\n\n\ndhw\nan R package for calculating SST metrics (Maximum Monthly Mean Climatology, SST Anomalies, Coral Bleaching HotSpots, Degree Heating Weeks)\n\n\n\ncoralseed\na spatially explicit reef-scale model of coral settlement following larval reseeding\n\n\n\nreefspawn\nan r package for quantifying reef-scale coral spawning events in Indo-Pacific reefs\n\n\n\nDCIEM\na development R package and shiny app to calculate dive profiles using the DCIEM diving algorithm\n\n\n\n\n\n\n\n\n\nSpatial analytics\n\noceans: a platform for viewing ocean data and coral bleaching events in realtime, written in Cesium.js\ndhw3: an interactive visualisation of marine heatwaves on the Great Barrier Reef, written in d3.js\nspatialtools: a collection of tools developed in r and shiny to facilitate spatial conservation planning built upon leaflet draw functionality (leafem and leaflet.extras).\n\n\n\nSensor development:\n\nsensorflow: development of low-cost open source drag-tilt flow meters using the arduino platform"
+    "text": "R packages:\n\n\n\n\ndhw\nan R package for calculating SST metrics (Maximum Monthly Mean Climatology, SST Anomalies, Coral Bleaching HotSpots, Degree Heating Weeks)\n\n\n\ncoastalwaves\nan R package to calculate fetch and wave energy along coastlines\n\n\n\ncoralseed\na spatially explicit reef-scale model of coral settlement following larval reseeding\n\n\n\ncoralcolors\ncolor scales for plotting in R based on nature’s most stunning and colorful organisms: scleractinian corals\n\n\n\nDCIEM\na development R package and shiny app to calculate dive profiles using the DCIEM diving algorithm\n\n\n\n\n\nSpatial analytics & data visualisation\n\n\n\noceans\n\na platform for viewing ocean data and coral bleaching events in realtime, written in Cesium.js\n\n\n\n\nspatialtools\n\na collection of tools developed in r and shiny to facilitate spatial conservation planning built upon leaflet draw functionality (leafem and leaflet.extras).\n\n\n\n\ndhw3\n\nan interactive visualisation of marine heatwaves on the Great Barrier Reef, written in d3.js\n\n\n\n\n\n\n\nSensor development:\n\n\n\nsensorflow\n\ndevelopment of low-cost open source drag-tilt flow meters using esp32 boards"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "marine-ecologist",
     "section": "",
-    "text": "Science\n•   marine ecology \n•   spatial ecology, community ecology, population dynamics\n•   corals, fish, plants, fossils, microbes\n\n  - climate change impacts on marine systems\n  - larval dispersal and connectivity\n  - functional limits in scaling coral reef restoration\n  - reef accretion, Holocene reef dynamics, coral carbonate budgets\n  - conservation, science-policy integration\n\n\nStatistics & Modelling:\n\n• spatial and statistical modelling (R, Python, Julia)\n• bayesian workflows (INLA, brms, STAN)\n• geospatial analysis (sf, stars, terra, CesiumJS, D3)\n• simulation and agent-based modelling\n• data visualization (R, Python, javascript)\n• data analytics, LLMs (Amazon EC2)\n• open science and reproducible workflows\n\n\n\nTeaching\n\n• AI and large language models in teaching\n• adaptive learning platforms, enhanced learning tools\n• supervision and mentorship (Honours, Masters, PhD, ECR postdocs)\n\n\n\nMarine Operations\n•  field research, survey/experimental design and implementation\n•  scientific diving (ADAS Level 1 commercial) and remote field logistics\n•  drone surveys and spatial mapping\n\n\n\nOther:\n• media & communications\n• scientific outreach & community engagement\n• science-policy integration"
+    "text": "Science\nmarine ecology \n  - spatial ecology\n  - community ecology\n  - population dynamics\n  - corals, fish, plants, fossils, microbes\n\nresearch themes \n  - climate change impacts on marine systems\n  - larval dispersal and connectivity\n  - restoration, scaling\n  - Holocene reef dynamics, reef accretion, coral carbonate budgets\n  - conservation, science-policy integration\n\n\nData analytics\n\n•     Spatial & statistical modelling (R, Python, Julia; GLMMs, hierarchical & spatio-temporal models)\n•     Bayesian approaches (Stan, brms, INLA; prior elicitation, PPCs)\n•     Geospatial data science (sf, stars, terra, GDAL/PostGIS; web/3D maps with Leaflet, D3, CesiumJS)\n•       Earth observation & big-data remote sensing (Sentinel/Landsat/VIIRS/MODIS; COG/NetCDF/Zarr; xarray/dask/stars; scalable pipelines on GEE/AWS; change detection & time-series)\n\n•     Simulation & agent-based modelling (stochastic/forward models, particle tracking, ABM)\n•     Data visualisation (ggplot2, plotly, Shiny; JavaScript/D3/CesiumJS)\n•     Data engineering, analytics & LLMs (AWS EC2/S3, Docker, Make/Snakemake; applied LLM workflows)\n•     Open science & reproducibility (Git/GitHub, Quarto/R Markdown, pkgdown, CI/CD, conda/mamba, renv, Zenodo)\n\n\n\nTeaching\n\n• AI and large language models in teaching\n• adaptive learning platforms, enhanced learning tools\n• supervision and mentorship (Honours, Masters, PhD, ECR postdocs)\n\n\n\nMarine Operations\n•  field research, survey/experimental design and implementation\n•  scientific diving (ADAS Level 1 commercial) and remote field logistics\n•  drone surveys and spatial mapping\n\n\n\nOther:\n• media & communications\n• scientific outreach & community engagement\n• science-policy integration"
+  },
+  {
+    "objectID": "index.html#science",
+    "href": "index.html#science",
+    "title": "marine-ecologist",
+    "section": "Science",
+    "text": "Science\nmarine ecology \n  - spatial ecology\n  - community ecology\n  - population dynamics\n  - corals, fish, plants, fossils, microbes\n\nresearch themes \n  - climate change impacts on marine systems\n  - larval dispersal and connectivity\n  - restoration, scaling\n  - Holocene reef dynamics, reef accretion, coral carbonate budgets\n  - conservation, science-policy integration"
+  },
+  {
+    "objectID": "index.html#data-analytics",
+    "href": "index.html#data-analytics",
+    "title": "marine-ecologist",
+    "section": "Data analytics",
+    "text": "Data analytics\n\n  - Spatial & statistical modelling (R, Python, Julia; GLMMs, hierarchical & spatio-temporal models)\n  - Bayesian approaches (Stan, brms, INLA; prior elicitation, PPCs)\n  - Geospatial data science (sf, stars, terra, GDAL/PostGIS; web/3D maps with Leaflet, D3, CesiumJS)\n  - Earth observation & big-data remote sensing (Sentinel/Landsat/VIIRS/MODIS; COG/NetCDF/Zarr; xarray/dask/stars; scalable pipelines on GEE/AWS; change detection & time-series)\n\n  - Simulation & agent-based modelling (stochastic/forward models, particle tracking, ABM)\n  - Data visualisation (ggplot2, plotly, Shiny; JavaScript/D3/CesiumJS)\n  - Data engineering, analytics & LLMs (AWS EC2/S3, Docker, Make/Snakemake; applied LLM workflows)\n  - Open science & reproducibility (Git/GitHub, Quarto/R Markdown, pkgdown, CI/CD, conda/mamba, renv, Zenodo)"
+  },
+  {
+    "objectID": "index.html#teaching",
+    "href": "index.html#teaching",
+    "title": "marine-ecologist",
+    "section": "Teaching",
+    "text": "Teaching\n\n  - AI and large language models in teaching\n  - adaptive learning platforms, enhanced learning tools\n  - supervision and mentorship (Honours, Masters, PhD, ECR postdocs)"
+  },
+  {
+    "objectID": "index.html#marine-operations",
+    "href": "index.html#marine-operations",
+    "title": "marine-ecologist",
+    "section": "Marine Operations",
+    "text": "Marine Operations\n  - field research, restoration science, survey/experimental design and implementation\n  - scientific diving (ADAS Level 1 commercial) and remote field logistics\n  - drone surveys and spatial mapping\n\n\nOther:\n• media & communications\n• scientific outreach & community engagement\n• science-policy integration"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "marine-ecologist",
+    "section": "",
+    "text": "george.roff@csiro.au\ng.roff@uq.edu.au"
+  },
+  {
+    "objectID": "contact.html#contact",
+    "href": "contact.html#contact",
+    "title": "marine-ecologist",
+    "section": "Contact:",
+    "text": "Contact:\n\ngeorge.roff@csiro.au\ng.roff@uq.edu.au"
+  },
+  {
+    "objectID": "contact.html#cv",
+    "href": "contact.html#cv",
+    "title": "marine-ecologist",
+    "section": "CV:",
+    "text": "CV:\n&lt;– on request —&gt;"
   }
 ]

@@ -1,6 +1,6 @@
 ---
-title: "Code"
-date: "2024-01-15"
+title: ""
+date: "2025-10-02"
 format: html
 editor: visual
 ---
@@ -8,33 +8,53 @@ editor: visual
 # R packages:
 
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ![](https://marine-ecologist.github.io/dhw/reference/figures/logo2.png){width="125"} | #### [dhw](https://marine-ecologist.github.io/dhw/)                                                                                                                                  |
+| ![](https://marine-ecologist.github.io/dhw/reference/figures/logo2.png){width="180"} | #### [dhw](https://marine-ecologist.github.io/dhw/)                                                                                                                                  |
 |                                                                                      |                                                                                                                                                                                      |
 |                                                                                      | an R package for calculating SST metrics (Maximum Monthly Mean Climatology, SST Anomalies, Coral Bleaching HotSpots, Degree Heating Weeks)                                           |
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                      | ### [coralseed](https://marine-ecologist.github.io/coralseed/)                                                                                                                       |
+| ![](images/clipboard-4076125666.png){width="180"}                                    | ### [coastalwaves](https://github.com/marine-ecologist/coastalwaves/)                                                                                                                |
+|                                                                                      |                                                                                                                                                                                      |
+|                                                                                      | an R package to calculate fetch and wave energy along coastlines                                                                                                                     |
++--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/clipboard-1939293143.png){width="180"}                                    | ### [coralseed](https://marine-ecologist.github.io/coralseed/)                                                                                                                       |
 |                                                                                      |                                                                                                                                                                                      |
 |                                                                                      | a spatially explicit reef-scale model of coral settlement following larval reseeding                                                                                                 |
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                      | ### [reefspawn](https://marine-ecologist.github.io/reefspawn/)                                                                                                                       |
+| ![](images/clipboard-3941876762.png){width="180"}                                    | ### [coralcolors](http://github.com/marine-ecologist/coralcolors)                                                                                                                    |
 |                                                                                      |                                                                                                                                                                                      |
-|                                                                                      | an r package for quantifying reef-scale coral spawning events in Indo-Pacific reefs                                                                                                  |
+|                                                                                      | color scales for plotting in R based on nature’s most stunning and colorful organisms: scleractinian corals                                                                          |
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ![](https://marine-ecologist.github.io/DCIEM/images/dciemhex.png){width="125"}       | ### [DCIEM](https://marine-ecologist.github.io/DCIEM/)                                                                                                                               |
+| ![](https://marine-ecologist.github.io/DCIEM/images/dciemhex.png){width="180"}       | ### [DCIEM](https://marine-ecologist.github.io/DCIEM/)                                                                                                                               |
 |                                                                                      |                                                                                                                                                                                      |
 |                                                                                      | a development `R` package and `shiny` app to calculate dive profiles using the [DCIEM diving algorithm](https://www.divegearexpress.com/amfile/file/download/file/143/product/8927/) |
 +--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                                      |                                                                                                                                                                                      |
-+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-# Spatial analytics
+# Spatial analytics & data visualisation
 
--   [oceans](https://marine-ecologist.github.io/oceans/index.html): a platform for viewing ocean data and coral bleaching events in realtime, written in `Cesium.js`
-
--   [dhw3](http://marine-ecologist.github.io/dhw3/): an interactive visualisation of marine heatwaves on the Great Barrier Reef, written in `d3.js`
-
--   [spatialtools](https://marine-ecologist.github.io/spatialtools/): a collection of tools developed in `r` and `shiny` to facilitate spatial conservation planning built upon `leaflet draw` functionality (`leafem` and `leaflet.extras`).
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+|                                                                                                                                                                             |                                                                                          |
++=============================================================================================================================================================================+==========================================================================================+
+| ### [oceans](https://marine-ecologist.github.io/oceans/index.html)                                                                                                          | ### ![](images/clipboard-3588440248.png){width="500"}                                    |
+|                                                                                                                                                                             |                                                                                          |
+| -   a platform for viewing ocean data and coral bleaching events in realtime, written in `Cesium.js`                                                                        |                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+| ### [spatialtools](https://marine-ecologist.github.io/spatialtools/)                                                                                                        | ![](https://marine-ecologist.github.io/spatialtools/images/classify-01.gif){width="500"} |
+|                                                                                                                                                                             |                                                                                          |
+| -   a collection of tools developed in `r` and `shiny` to facilitate spatial conservation planning built upon `leaflet draw` functionality (`leafem` and `leaflet.extras`). |                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
+| ### [dhw3](http://marine-ecologist.github.io/dhw3/)                                                                                                                         | ### ![](images/clipboard-1150031001.png){width="500"}                                    |
+|                                                                                                                                                                             |                                                                                          |
+| -   an interactive visualisation of marine heatwaves on the Great Barrier Reef, written in `d3.js`                                                                          |                                                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+
 
 # Sensor development:
 
--   [sensorflow](https://github.com/marine-ecologist/sensorflow): development of low-cost open source drag-tilt flow meters using the `arduino` platform
++------------------------------------------------------------------------------------+----------------------------------------------------------------------+
+|                                                                                    |                                                                      |
++====================================================================================+======================================================================+
+| ### [sensorflow](https://github.com/marine-ecologist/sensorflow)                   | -                                                                    |
+|                                                                                    | -   ![](images/348447254-833a05e3-8168-440a-9594-928a44c8534e-2.gif) |
+| -   development of low-cost open source drag-tilt flow meters using `esp32` boards |                                                                      |
++------------------------------------------------------------------------------------+----------------------------------------------------------------------+
+
+-   

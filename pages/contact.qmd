@@ -1,0 +1,25 @@
+---
+title: ""
+format:
+  html:
+    toc: FALSE
+    code-fold: true
+    code-tools: false
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+![](images/hook.jpg){fig-align="center"}
+
+## Contact:
+
+-   george.roff\@csiro.au
+
+-   g.roff\@uq.edu.au
+
+## CV:
+
+\<-- on request —\>

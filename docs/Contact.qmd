@@ -1,0 +1,23 @@
+---
+title: ""
+format:
+  html:
+    toc: FALSE
+    code-fold: true
+    code-tools: false
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual
+---
+
+## Contact:
+
+-   george.roff\@csiro.au
+
+-   g.roff\@uq.edu.au
+
+## CV:
+
+\<-- on request —\>

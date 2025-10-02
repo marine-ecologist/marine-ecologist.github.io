@@ -1,7 +1,5 @@
 ---
 title: ""
-author: "George Roff"
-date: "2025-03-18"
 format:
   html:
     toc: FALSE
@@ -16,52 +14,57 @@ editor: visual
 
 ![](images/clipboard-1631019035.jpeg){width="194"} ![](images/clipboard-615148530.jpeg){width="220"}![](images/clipboard-4173833884.jpeg){width="351"}
 
-### Science
+## Science
 
 ```         
-•   marine ecology 
-•   spatial ecology, community ecology, population dynamics
-•   corals, fish, plants, fossils, microbes
+marine ecology 
+  - spatial ecology
+  - community ecology
+  - population dynamics
+  - corals, fish, plants, fossils, microbes
 
+research themes 
   - climate change impacts on marine systems
   - larval dispersal and connectivity
-  - functional limits in scaling coral reef restoration
-  - reef accretion, Holocene reef dynamics, coral carbonate budgets
+  - restoration, scaling
+  - Holocene reef dynamics, reef accretion, coral carbonate budgets
   - conservation, science-policy integration
 ```
 
-### Statistics & Modelling:
+## Data analytics
 
 ```         
 
-• spatial and statistical modelling (R, Python, Julia)
-• bayesian workflows (INLA, brms, STAN)
-• geospatial analysis (sf, stars, terra, CesiumJS, D3)
-• simulation and agent-based modelling
-• data visualization (R, Python, javascript)
-• data analytics, LLMs (Amazon EC2)
-• open science and reproducible workflows
+  - Spatial & statistical modelling (R, Python, Julia; GLMMs, hierarchical & spatio-temporal models)
+  - Bayesian approaches (Stan, brms, INLA; prior elicitation, PPCs)
+  - Geospatial data science (sf, stars, terra, GDAL/PostGIS; web/3D maps with Leaflet, D3, CesiumJS)
+  - Earth observation & big-data remote sensing (Sentinel/Landsat/VIIRS/MODIS; COG/NetCDF/Zarr; xarray/dask/stars; scalable pipelines on GEE/AWS; change detection & time-series)
+
+  - Simulation & agent-based modelling (stochastic/forward models, particle tracking, ABM)
+  - Data visualisation (ggplot2, plotly, Shiny; JavaScript/D3/CesiumJS)
+  - Data engineering, analytics & LLMs (AWS EC2/S3, Docker, Make/Snakemake; applied LLM workflows)
+  - Open science & reproducibility (Git/GitHub, Quarto/R Markdown, pkgdown, CI/CD, conda/mamba, renv, Zenodo)
 ```
 
 ![](images/clipboard-3955410480.png){style="opacity: 0.75" width="650"}
 
-### Teaching
+## Teaching
 
 ```         
 
-• AI and large language models in teaching
-• adaptive learning platforms, enhanced learning tools
-• supervision and mentorship (Honours, Masters, PhD, ECR postdocs)
+  - AI and large language models in teaching
+  - adaptive learning platforms, enhanced learning tools
+  - supervision and mentorship (Honours, Masters, PhD, ECR postdocs)
 ```
 
 ![](images/clipboard-1533648111.png){style="opacity: 0.75" width="650"}
 
-### Marine Operations
+## Marine Operations
 
 ```         
-•  field research, survey/experimental design and implementation
-•  scientific diving (ADAS Level 1 commercial) and remote field logistics
-•  drone surveys and spatial mapping
+  - field research, restoration science, survey/experimental design and implementation
+  - scientific diving (ADAS Level 1 commercial) and remote field logistics
+  - drone surveys and spatial mapping
 ```
 
 ![](images/clipboard-997343963.png){style="opacity: 0.75" width="650"}

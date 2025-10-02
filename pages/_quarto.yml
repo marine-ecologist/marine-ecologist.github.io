@@ -1,10 +1,6 @@
 project:
   type: website
-  output-dir: ../docs
-
-home:
-  title: "reefspawn"
-  strip_header: true
+  output-dir: docs
 
 website:
   title: "marine-ecologist"
@@ -17,9 +13,8 @@ website:
       - text: "Projects"
         icon: cube
         menu:
-          - text: "---Ecological models---"
-            href: ""
-          - text: "coralseed - a realtime interactive visualisation of the worlds oceans"
+          - text: "---"
+          - text: "coralseed - a realtime interactive visualisation of the world's oceans"
             icon: compass
             href: https://marine-ecologist.github.io/coralseed/
           - text: "reefspawn - an interactive visualisation of heatwaves on the Great Barrier Reef"
@@ -27,37 +22,46 @@ website:
             href: https://marine-ecologist.github.io/reefspawn/
           - text: "DHW - an R package for calculating sea surface temperature (SST) metrics"
             icon: thermometer-half
-            href: https://marine-ecologist.github.io/reefspawn/
-          - text: "---data visualisation---"
-            href: ""
-          - text: "Oceans - a realtime interactive visualisation of the worlds oceans"
+            href: https://marine-ecologist.github.io/dhw/
+          - text: "coastalwaves - a realtime interactive visualisation of the world's oceans"
+            icon: wind
+            href: https://marine-ecologist.github.io/coastalwaves/
+          - text: "coralcolors - colour palettes for R and ggplot2 based on scleractinian corals"
+            icon: palette
+            href: https://marine-ecologist.github.io/coralcolors/
+          - text: "---"
+          - text: "Oceans - a realtime interactive visualisation of the world's oceans"
             icon: circle
             href: https://marine-ecologist.github.io/oceans/
-          - text: "dhw3 - an interactive visualisation of heatwaves on the Great Barrier Reef "
+          - text: "dhw3 - an interactive visualisation of heatwaves on the Great Barrier Reef"
             icon: fire
             href: https://marine-ecologist.github.io/dhw3/
-          - text: "---Marine operations---"
-            href: ""
-          - text: "DCIEM - a dev app and package for calculating dive algorithm s"
+          - text: "---"
+          - text: "DCIEM - a dev app and package for calculating dive algorithms"
             icon: calculator
             href: https://marine-ecologist.github.io/dciem/
-          - text: "Sensorflow - development of low-cost tiltmeters "
-            icon: object-ungroup
+          - text: "Sensorflow - development of low-cost tiltmeters"
+            icon: shuffle
             href: https://github.com/marine-ecologist/sensorflow/
       - text: "Publications"
         menu:
+          - text: "Google Scholar profile"
+            icon: google
+            href: "https://scholar.google.com.au/citations?user=g_m1R7IAAAAJ&hl=en"
           - text: "Publication summary"
             icon: bar-chart
             href: publication_summary.qmd
-          - text: "Publication Record"
+          - text: "Publication list"
             icon: stack-overflow
             href: publications.qmd
       - text: "Images"
         menu:
-          - text: "2024/2025 Great Barrier Reef bleaching events "
+          - text: "2024/2025 Great Barrier Reef bleaching events"
             icon: fire
-            href: images.qmd
-      - text: "Github"
+            href: <ADD-URL>   # TODO
+      - text: "Contact"
+        href: contact.qmd
+      - text: "GitHub"
         icon: github
         href: https://github.com/marine-ecologist
 
